@@ -1,2 +1,3 @@
 # hkjc-web-control
-The example of selenium web control 
+The template of selenium web control including login, marksix
+
