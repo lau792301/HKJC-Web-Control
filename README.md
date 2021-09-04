@@ -1,12 +1,17 @@
 # HKJC Web Control
 The template of selenium web control including login, marksix
 
-# Install Firefox and download webdrivers for your system operation
+# Step 1 -- Install Firefox
+
+# (Optional) Download webdrivers for your system operation
+Webdriver folder already contains related version for Window and Linux
 https://github.com/mozilla/geckodriver/releases
 
-# Install Relevant Python Library
+# Step 2 -- Install Relevant Python Library
 pip3 install -r requirements.txt
 
-# Create .env to insert your own hkjc information
+# Step 3 -- Create .env to insert your own hkjc information
 ACCOUNT = <Account>
 PASSWORD = <Password>
+
+# Step 4 -- Uncomment the code in `main.py` and run it
