@@ -7,7 +7,7 @@ The template of selenium web control including login, marksix
 `webdriver` folder already contains related version for Window and Linux
 https://github.com/mozilla/geckodriver/releases
 
-## Step 2 -- Install Related Python Library
+## Step 2 -- Install related Python library
 pip3 install -r requirements.txt
 
 ## Step 3 -- Create `.env` and insert your HKJC information
