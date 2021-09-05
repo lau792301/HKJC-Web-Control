@@ -4,7 +4,7 @@ The template of selenium web control including login, marksix
 ## Step 1 -- Install Firefox
 
 ## (Optional) Download webdrivers for your system operation
-`webdriver` folder already contains related version for Window and Linux
+`.modules/webdriver` folder already contains related version for Window and Linux
 https://github.com/mozilla/geckodriver/releases
 
 ## Step 2 -- Install related Python library

@@ -1,13 +1,19 @@
 # %%
 import os
-import os
 from dotenv import load_dotenv, find_dotenv
 load_dotenv(find_dotenv())
 import platform
+
+import logging
+logging.basicConfig(level = logging.INFO)
+
 # %%
 # System Operation
 system_operation = platform.system()
-WEBDRIVER_PATH = './webdriver/geckodriver'
+
+WEBDRIVER_PATH = os.path.dirname(__file__) + '/webdriver/geckodriver'
+logging.info('Reading Webdriver Path:' + WEBDRIVER_PATH)
+logging.info(os.getcwd())
 WEBDRIVER_PATH = WEBDRIVER_PATH + '.exe' if system_operation == 'Windows' else WEBDRIVER_PATH
 
 # %%
