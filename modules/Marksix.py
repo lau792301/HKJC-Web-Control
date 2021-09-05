@@ -6,7 +6,6 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.action_chains import ActionChains
 
 import time
-from setting import ACCOUNT, PASSWORD, QUESTION_DICT, WEBDRIVER_PATH, COOKIES_FILE_NAME
 
 # %%
 import logging
