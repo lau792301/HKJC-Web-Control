@@ -1,6 +1,6 @@
 # %%
-from logging import makeLogRecord
-from module import HKJC, MarkSix
+from modules.HKJC import HKJC
+from modules.Marksix import Marksix
 # %%
 hkjc = HKJC()
 # hkjc.login()
@@ -9,7 +9,7 @@ hkjc = HKJC()
 # %%
 # MarkSix Control Part
 hkjc.go_gaming('M6')
-marksix = MarkSix(hkjc.driver)
+marksix = Marksix(hkjc.driver)
 # marksix.buy_single([21, 15, 35, 9, 4, 49])
 # marksix.buy_multi([1,2,3,4,5,6,7], is_full_ratio=False)
 # marksix.buy_banker(main_list= [1,2,3], sub_list=[4,5,6,15,16,17,18], is_full_ratio=False)
