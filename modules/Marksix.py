@@ -36,6 +36,19 @@ class Marksix:
 
     def _to_half_ratio(self, num = 1):
         self.driver.find_element_by_id(f'radioPartial_{num}').click()
+    
+    def get_next_game_info(self):
+        info_dict = {} # Init
+        info_table = self.driver.find_element_by_id('oddsTable') \
+                    .find_elements_by_xpath('table/tbody/tr')[1] \
+                    .find_elements_by_xpath('td/table/tbody/tr/td')[0] \
+                    .find_elements_by_xpath('table/tbody/tr')
+        # Info
+        for info_path in info_table:
+            row_path = info_path.find_elements_by_xpath('td')
+            info_dict[row_path[0].text] = row_path[1].text
+        return info_dict
+
     '''
     Example of multi_tickets
     True:

@@ -16,7 +16,7 @@ logging.basicConfig(level = logging.INFO)
 class HKJC:
     def __init__(self):
         self.driver = webdriver.Firefox(executable_path= WEBDRIVER_PATH)
-        self.driver.get('https://bet.hkjc.com/marksix/index.aspx?lang=ch')
+        self.driver.get('https://bet.hkjc.com/marksix/index.aspx?lang=en')
         
     def login(self):
         W_account_info = WebDriverWait(self.driver, 10).until(EC.presence_of_element_located((By.ID, 'divAccInfoLogout')))

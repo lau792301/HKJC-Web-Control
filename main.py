@@ -8,7 +8,9 @@ hkjc = HKJC()
 # %%
 # MarkSix Control Part
 hkjc.go_gaming('M6')
-marksix = Marksix(hkjc.driver)
+ms = Marksix(hkjc.driver)
+ms_next_game_info = ms.get_next_game_info()
+ms_next_game_date = ms_next_game_info['Draw Date']
 # marksix.buy_single([21, 15, 35, 9, 4, 49])
 # marksix.buy_multi([1,2,3,4,5,6,7], is_full_ratio=False)
 # marksix.buy_banker(main_list= [1,2,3], sub_list=[4,5,6,15,16,17,18], is_full_ratio=False)
